@@ -1,78 +1,55 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Dr. Soheila Maleki — Psychotherapy</title>
-  <meta name="description" content="Dr. Soheila Maleki – Clinical & Health Psychologist (MA, PhD). AEDP · ISTDP · TFP · Mentalization. Psychotherapy & online sessions.">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دکتر سهیلا ملکی | روان‌درمانگر</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-home">
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">
-        <img src="images/logo.png" alt="Dr. Soheila Maleki" id="logo">
-      </div>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="approaches.html">Approaches</a>
-        <a href="resources.html">Articles</a>
-        <a href="books.html">Books</a>
-        <a href="tests.html">Tests</a>
-        <a href="online.html">Online</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+<body>
 
-  <!-- HERO -->
-  <section class="hero">
+<!-- هدر و منو -->
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Dr Soheila Maleki" class="site-logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="about.html">درباره من</a></li>
+            <li><a href="services.html">خدمات</a></li>
+            <li><a href="approaches.html">رویکردها</a></li>
+            <li><a href="books.html">کتاب‌ها</a></li>
+            <li><a href="tests.html">آزمون‌ها</a></li>
+            <li><a href="contact.html">تماس</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- بخش هِرو با ویدیو -->
+<section class="hero">
+    <video autoplay muted loop class="hero-video">
+        <source src="videos/hero-video.mp4" type="video/mp4">
+        مرورگر شما از ویدیو پشتیبانی نمی‌کند.
+    </video>
     <div class="hero-overlay"></div>
-    <img class="hero-bg" src="images/hero.jpg" alt="Hero background">
-    <div class="container hero-content">
-      <div class="hero-left">
+    <div class="hero-content">
+        <img src="images/logo.png" alt="Logo" class="hero-logo">
         <h1>دکتر سهیلا ملکی</h1>
-        <p class="lead-fa">روان‌شناس بالینی و سلامت (MA, PhD). متخصص در AEDP · ISTDP · TFP · منتالیزیشن</p>
-        <p class="lead-en">Dr. Soheila Maleki — Clinical & Health Psychologist (MA, PhD). AEDP · ISTDP · TFP · Mentalization</p>
-        <div class="hero-ctas">
-          <a class="btn primary" href="online.html">Book a Session / رزرو نوبت</a>
-          <a class="btn outline" href="contact.html">Contact / تماس</a>
-        </div>
-      </div>
-      <div class="hero-right">
-        <!-- optional portrait (if you have a portrait square) -->
-        <div class="portrait">
-          <img src="images/hero-portrait.jpg" alt="Dr Soheila Maleki portrait">
-        </div>
-      </div>
+        <p>روان‌درمانگر | AEDP • ISTDP • TFP • Mentalization</p>
+        <a href="contact.html" class="btn-primary">رزرو جلسه</a>
     </div>
-  </section>
+</section>
 
-  <!-- Quick features -->
-  <section class="features container">
-    <div class="feature">
-      <h3>Approaches</h3>
-      <p>AEDP · ISTDP · TFP · Mentalization</p>
-    </div>
-    <div class="feature">
-      <h3>Areas</h3>
-      <p>Anxiety · Depression · Trauma · Personality Disorders</p>
-    </div>
-    <div class="feature">
-      <h3>Resources</h3>
-      <p>Articles, Translations & Books</p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
+<!-- بخش معرفی کوتاه -->
+<section class="intro">
     <div class="container">
-      <p>© <span id="year"></span> Dr. Soheila Maleki — Clinical & Health Psychologist</p>
-      <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <h2>خدمات و تخصص‌ها</h2>
+        <p>من دکتر سهیلا ملکی، روان‌درمانگر با گرایش‌های TFP، ISTDP، AEDP و Mentalization هستم.  
+        هدف من کمک به رشد فردی، ارتقای سلامت روان و رسیدن به تعادل در زندگی است.</p>
+        <a href="about.html" class="btn-secondary">درباره من بیشتر بدانید</a>
     </div>
-  </footer>
+</section>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
