@@ -1,8 +1,8 @@
 body {
-  font-family: sans-serif;
+  font-family: "Georgia", serif;
   max-width: 900px;
   margin: 40px auto;
-  line-height: 1.6;
+  line-height: 1.7;
   padding: 0 20px;
   background-color: #f9f9f9;
   color: #333;
@@ -10,14 +10,41 @@ body {
 
 header h1 {
   color: #2a3f54;
-  font-size: 2em;
+  font-size: 2.2em;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1em;
+  margin: 2px 0;
+}
+
+nav a {
+  color: #4a90e2;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-top: 30px;
 }
 
 section h2 {
   color: #1f2d3d;
-  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 ul li {
+  margin-bottom: 12px;
+}
+
+.inspiration li {
+  background-color: #e0e0e0;
+  padding: 10px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
