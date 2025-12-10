@@ -1,5 +1,17 @@
 # Dr. Soheila Maleki – Psychotherapy
 
-وب‌سایت رسمی دکتر سهیلا ملکی، روان‌شناس بالینی و سلامت (کارشناسی ارشد و دکتری)، متخصص TFP، ISTDP، منتالیزیشن و AEDP، ارائه خدمات روان‌درمانی و رشد هیجانی.
+Official website repository for Dr. Soheila Maleki (MA, PhD).  
+Site is bilingual (Persian / English) and built for GitHub Pages.
 
-Dr. Soheila Maleki – Clinical & Health Psychologist (MA, PhD), specializing in TFP, ISTDP, Mentalization & AEDP psychotherapy for emotional well-being.
+Pages:
+- index.html — Home
+- about.html — About
+- services.html — Services
+- approaches.html — Approaches
+- resources.html — Articles & Translations
+- books.html — Books
+- tests.html — Psychological Tests
+- online.html — Online Therapy
+- contact.html — Contact
+
+To publish: push files to `main` branch and enable GitHub Pages (root).
