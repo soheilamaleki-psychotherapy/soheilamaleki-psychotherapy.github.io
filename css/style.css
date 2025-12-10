@@ -1,57 +1,125 @@
-:root{
-  --bg:#f7f8fb;
-  --card:#ffffff;
-  --accent:#4a90e2;
-  --text:#25323b;
-  --muted:#6b7680;
+/* عمومی */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma', sans-serif;
+    scroll-behavior: smooth;
 }
 
-/* Reset ساده */
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
-body{font-family: 'Vazir', Arial, sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+/* هدر و منو */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(0,0,0,0.5);
+}
 
-/* کانتینر */
-.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
 
-/* HEADER */
-.site-header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,0.85);backdrop-filter:blur(4px);border-bottom:1px solid rgba(0,0,0,0.04);z-index:50}
-.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-.logo img{height:44px}
-.main-nav a{margin-left:14px;color:var(--text);text-decoration:none;font-weight:600}
-.main-nav a:hover{color:var(--accent)}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
-/* HERO */
-.hero{position:relative;height:72vh;min-height:380px;display:flex;align-items:center}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.85) saturate(0.95)}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(255,255,255,0.35), rgba(255,255,255,0.6))}
-.hero-content{position:relative;display:flex;align-items:center;justify-content:space-between;width:100%;height:100%}
-.hero-left{max-width:640px;padding:40px}
-.hero-left h1{font-family: 'Lora', Georgia, serif;font-size:2.6rem;color:var(--text);margin-bottom:6px}
-.lead-fa{font-weight:700;color:var(--muted);margin-bottom:8px}
-.lead-en{color:var(--muted);margin-bottom:18px;font-style:italic}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
 
-/* portrait */
-.portrait img{width:220px;height:220px;object-fit:cover;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.12);border:6px solid rgba(255,255,255,0.6)}
+.site-logo {
+    height: 50px;
+}
 
-/* Buttons */
-.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:700}
-.btn.primary{background:var(--accent);color:#fff}
-.btn.outline{background:transparent;border:2px solid rgba(74,144,226,0.12);color:var(--accent);}
+/* بخش هِرو */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
 
-/* FEATURES */
-.features{display:flex;gap:18px;margin-top:-40px;padding-bottom:30px}
-.feature{background:var(--card);flex:1;padding:20px;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,0.06);text-align:center}
-.feature h3{color:var(--text);margin-bottom:8px}
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
 
-/* Footer */
-.site-footer{padding:26px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(0,0,0,0.04);margin-top:40px}
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 2;
+}
 
-/* responsive */
-@media (max-width:900px){
-  .hero-content{flex-direction:column;justify-content:center}
-  .hero-right{margin-top:18px}
-  .portrait img{width:160px;height:160px}
-  .features{flex-direction:column}
-  .main-nav{display:none}
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* بخش معرفی */
+.intro {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.intro h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.btn-secondary {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
 }
