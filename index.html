@@ -1,49 +1,78 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <title>Dr. Soheila Maleki – Psychotherapy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dr. Soheila Maleki — Psychotherapy</title>
+  <meta name="description" content="Dr. Soheila Maleki – Clinical & Health Psychologist (MA, PhD). AEDP · ISTDP · TFP · Mentalization. Psychotherapy & online sessions.">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header>
-    <h1>دکتر سهیلا ملکی</h1>
-    <p>روان‌شناس بالینی و سلامت (کارشناسی ارشد و دکتری) | متخصص TFP, ISTDP, منتالیزیشن و AEDP</p>
-    <p>Dr. Soheila Maleki – Clinical & Health Psychologist (MA, PhD), specializing in TFP, ISTDP, Mentalization & AEDP</p>
-
-    <nav>
-      <a href="index.html">Home / خانه</a>
-      <a href="about.html">About / درباره</a>
-      <a href="services.html">Services / خدمات</a>
-      <a href="resources.html">Resources / منابع</a>
-      <a href="contact.html">Contact / تماس</a>
-    </nav>
+<body class="page-home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="images/logo.png" alt="Dr. Soheila Maleki" id="logo">
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="approaches.html">Approaches</a>
+        <a href="resources.html">Articles</a>
+        <a href="books.html">Books</a>
+        <a href="tests.html">Tests</a>
+        <a href="online.html">Online</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="cards">
-    <div class="card">
-      <h2>Services / خدمات</h2>
-      <ul>
-        <li>TFP Therapy / روان‌درمانی TFP</li>
-        <li>ISTDP Therapy / روان‌درمانی ISTDP</li>
-        <li>Mentalization-Based Therapy / روان‌درمانی مبتنی بر منتالیزیشن</li>
-        <li>AEDP / روان‌درمانی پویشی تجربی تسریع‌شده</li>
-      </ul>
-      <a class="button" href="contact.html">Book a session / رزرو نوبت</a>
-    </div>
-
-    <div class="card">
-      <h2>Resources / منابع</h2>
-      <p>مقالات و کتاب‌های ترجمه شده و معرفی منابع تخصصی روان‌کاوی</p>
-      <a class="button" href="resources.html">View / مشاهده</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <img class="hero-bg" src="images/hero.jpg" alt="Hero background">
+    <div class="container hero-content">
+      <div class="hero-left">
+        <h1>دکتر سهیلا ملکی</h1>
+        <p class="lead-fa">روان‌شناس بالینی و سلامت (MA, PhD). متخصص در AEDP · ISTDP · TFP · منتالیزیشن</p>
+        <p class="lead-en">Dr. Soheila Maleki — Clinical & Health Psychologist (MA, PhD). AEDP · ISTDP · TFP · Mentalization</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="online.html">Book a Session / رزرو نوبت</a>
+          <a class="btn outline" href="contact.html">Contact / تماس</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <!-- optional portrait (if you have a portrait square) -->
+        <div class="portrait">
+          <img src="images/hero-portrait.jpg" alt="Dr Soheila Maleki portrait">
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>Contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    <p>&copy; 2025 Dr. Soheila Maleki</p>
+  <!-- Quick features -->
+  <section class="features container">
+    <div class="feature">
+      <h3>Approaches</h3>
+      <p>AEDP · ISTDP · TFP · Mentalization</p>
+    </div>
+    <div class="feature">
+      <h3>Areas</h3>
+      <p>Anxiety · Depression · Trauma · Personality Disorders</p>
+    </div>
+    <div class="feature">
+      <h3>Resources</h3>
+      <p>Articles, Translations & Books</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Dr. Soheila Maleki — Clinical & Health Psychologist</p>
+      <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </div>
   </footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
