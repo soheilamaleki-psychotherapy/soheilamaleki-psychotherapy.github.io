@@ -132,3 +132,34 @@ header {
     max-width: 800px;
     margin: 0 auto 30px;
 }
+
+/* بخش بیو */
+.bio {
+    background-color: #f0f4f8;
+    padding: 80px 20px;
+    text-align: right;
+    direction: rtl;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.bio h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.bio ul {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.bio ul li {
+    margin-bottom: 10px;
+}
+
+.bio strong {
+    color: #111;
+}
