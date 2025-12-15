@@ -1,25 +1,33 @@
-/* عمومی */
+/* =================== عمومی =================== */
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Tahoma', sans-serif;
     scroll-behavior: smooth;
+    color: #333;
+    background-color: #fff;
 }
 
-/* هدر و منو */
+/* =================== هدر و منو =================== */
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
-    z-index: 10;
-    background: rgba(0,0,0,0.5);
+    z-index: 100;
+    background: rgba(0,0,0,0.7);
+    transition: background 0.3s ease, padding 0.3s ease;
+}
+
+header.scrolled {
+    background: rgba(0,0,0,0.9);
+    padding: 5px 50px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
+    padding: 15px 50px;
 }
 
 .nav-links {
@@ -32,13 +40,22 @@ header {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #ff7f50;
+    color: #fff;
 }
 
 .site-logo {
     height: 50px;
 }
 
-/* بخش هِرو */
+/* =================== بخش هِرو =================== */
 .hero {
     position: relative;
     height: 100vh;
@@ -80,13 +97,15 @@ header {
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin: 10px 0;
+    font-size: 56px;
+    margin: 20px 0 10px 0;
+    animation: fadeInDown 1s ease forwards;
 }
 
 .hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease forwards;
 }
 
 .hero-portrait {
@@ -97,43 +116,55 @@ header {
     border: 3px solid #fff;
 }
 
-/* دکمه‌ها */
+/* =================== دکمه‌ها =================== */
 .btn-primary {
-    padding: 12px 25px;
+    padding: 15px 30px;
     background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    background-color: #ff6333;
+}
+
+.btn-secondary {
+    padding: 12px 25px;
+    background-color: #333;
     color: #fff;
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.btn-secondary {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 20px;
+.btn-secondary:hover {
+    background-color: #555;
+    transform: scale(1.05);
 }
 
-/* بخش معرفی */
-.intro {
+/* =================== بخش معرفی / Bio =================== */
+.intro, .about-preview {
     padding: 80px 20px;
     text-align: center;
     background: #f5f5f5;
 }
 
-.intro h2 {
+.intro h2, .about-preview h2, .bio h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.intro p {
+.intro p, .bio p {
     font-size: 18px;
     max-width: 800px;
     margin: 0 auto 30px;
 }
 
-/* بخش بیو */
 .bio {
     background-color: #f0f4f8;
     padding: 80px 20px;
@@ -143,23 +174,59 @@ header {
     line-height: 1.7;
 }
 
-.bio h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-}
-
-.bio ul {
+.bio ul, .approach-list, .skills-list {
     margin-top: 15px;
     margin-bottom: 30px;
     padding-left: 20px;
 }
 
-.bio ul li {
+.bio ul li, .approach-list li, .skills-list li {
     margin-bottom: 10px;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.bio strong {
-    color: #111;
+.bio ul li:hover, .approach-list li:hover, .skills-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* =================== CTA =================== */
+.cta {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* =================== Footer =================== */
+.site-footer {
+    text-align: center;
+    padding: 30px 0;
+    background: #222;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* =================== انیمیشن‌ها =================== */
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
