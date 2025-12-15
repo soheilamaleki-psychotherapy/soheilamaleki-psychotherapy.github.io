@@ -23,7 +23,6 @@
         <div class="logo-container">
             <img src="images/logo.png" alt="Dr Soheila Maleki" class="site-logo">
         </div>
-
         <ul class="nav-links">
             <li><a href="#hero" class="active">خانه</a></li>
             <li><a href="#about-preview">درباره من</a></li>
@@ -41,17 +40,12 @@
     <video autoplay muted loop playsinline class="hero-video">
         <source src="videos/hero-video.mp4" type="video/mp4">
     </video>
-
     <div class="hero-overlay"></div>
-
     <div class="hero-content" data-aos="zoom-in" data-aos-delay="300">
         <img src="images/logo.png" alt="Logo" class="hero-logo">
-
         <h1>دکتر سهیلا ملکی</h1>
         <p class="hero-subtitle">روان‌درمانگر اختلالات فردی بزرگسال و زوج‌درمانگر</p>
-
         <img src="images/portrait.jpg" alt="Dr Soheila Maleki" class="hero-portrait">
-
         <a href="#contact" class="btn-primary">رزرو جلسه</a>
     </div>
 </section>
@@ -59,20 +53,16 @@
 <!-- ================= ABOUT PREVIEW ================= -->
 <section class="about-preview container" id="about-preview">
     <h2 data-aos="fade-right">درباره من بیشتر بدانید</h2>
-
     <p data-aos="fade-left">
         من سهیلا ملکی هستم، روان‌درمانگر اختلالات فردی بزرگسال با رویکردهای:
     </p>
-
     <ul class="approach-list" data-aos="fade-up" data-aos-delay="200">
         <li>روان‌درمانی مبتنی بر انتقال (TFP)</li>
         <li>روان‌درمانی مبتنی بر ذهنی‌سازی (Mentalization)</li>
         <li>روان‌درمانی پویشی کوتاه‌مدت (ISTDP)</li>
         <li>زوج‌درمانی با رویکرد هیجان‌مدار (EFT)</li>
     </ul>
-
     <h3 data-aos="fade-right" data-aos-delay="400">مهارت‌های تخصصی</h3>
-
     <ul class="skills-list" data-aos="fade-up" data-aos-delay="500">
         <li>درمان اختلالات شخصیت با تمرکز بر سازمان‌های شخصیت</li>
         <li>درمان اختلالات دلبستگی و پیامدهای تجارب هیجانی اولیه</li>
@@ -81,7 +71,6 @@
         <li>اجرای آزمون ارزیابی جامع شخصیت (SWAP-200)</li>
         <li>اجرای مصاحبه ساختاریافته سازمان شخصیت (STIPO)</li>
     </ul>
-
     <a href="about.html" class="btn-secondary" data-aos="fade-up" data-aos-delay="600">مطالعه کامل</a>
 </section>
 
@@ -97,9 +86,10 @@
     <p>© تمامی حقوق محفوظ است – دکتر سهیلا ملکی</p>
 </footer>
 
-<!-- ================= AOS JS ================= -->
+<!-- ================= JS ================= -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
+    // فعالسازی AOS
     AOS.init({
         duration: 1000,
         once: true
@@ -107,12 +97,22 @@
 
     // Smooth Scroll برای لینک‌های داخلی
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function(e){
             e.preventDefault();
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
             });
         });
+    });
+
+    // Sticky Header هنگام اسکرول
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
     });
 </script>
 
