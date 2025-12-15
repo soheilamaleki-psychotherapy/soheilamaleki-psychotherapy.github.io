@@ -2,129 +2,100 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>Dr. Soheila Maleki | Psychotherapist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دکتر سهیلا ملکی | روان‌درمانگر</title>
 
     <!-- SEO -->
-    <meta name="description" content="Dr. Soheila Maleki – Psychotherapist | TFP, ISTDP, Mentalization, AEDP | Individual & Couples Therapy">
-    
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="دکتر سهیلا ملکی، روان‌درمانگر بزرگسال و زوج‌درمانگر با رویکردهای TFP، ISTDP، Mentalization و AEDP">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Vazirmatn', sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-        }
-
-        /* HERO */
-        .hero {
-            min-height: 100vh;
-            background: linear-gradient(
-                rgba(15,23,42,0.75),
-                rgba(15,23,42,0.75)
-            ),
-            url("images/hero.jpg") center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        .hero img {
-            width: 160px;
-            border-radius: 50%;
-            border: 3px solid #e5e7eb;
-            margin-bottom: 1.5rem;
-        }
-
-        .hero h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .hero h2 {
-            font-size: 1.1rem;
-            font-weight: 300;
-            opacity: 0.9;
-        }
-
-        /* ABOUT */
-        .about {
-            max-width: 900px;
-            margin: 4rem auto;
-            padding: 0 1.5rem;
-            line-height: 2;
-        }
-
-        .about h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        ul {
-            padding-right: 1.2rem;
-        }
-
-        li {
-            margin-bottom: 0.6rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <div>
-        <!-- عکس شخصی -->
-        <img src="images/profile.jpg" alt="Dr. Soheila Maleki">
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Dr Soheila Maleki" class="site-logo">
+        </div>
 
-        <h1>Dr. Soheila Maleki</h1>
-        <h2>Psychotherapist | Clinical & Health Psychology</h2>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">خانه</a></li>
+            <li><a href="about.html">درباره من</a></li>
+            <li><a href="services.html">خدمات</a></li>
+            <li><a href="approaches.html">رویکردها</a></li>
+            <li><a href="books.html">کتاب‌ها</a></li>
+            <li><a href="tests.html">آزمون‌ها</a></li>
+            <li><a href="contact.html">تماس</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="videos/hero-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <img src="images/logo.png" alt="Logo" class="hero-logo">
+
+        <h1>دکتر سهیلا ملکی</h1>
+        <p class="hero-subtitle">
+            روان‌درمانگر اختلالات فردی بزرگسال و زوج‌درمانگر
+        </p>
+
+        <img src="images/portrait.jpg" alt="Dr Soheila Maleki" class="hero-portrait">
+
+        <a href="contact.html" class="btn-primary">رزرو جلسه</a>
     </div>
 </section>
 
-<!-- ABOUT SECTION -->
-<section class="about">
-    <h3>درباره من بیشتر بدانید</h3>
+<!-- ================= ABOUT PREVIEW ================= -->
+<section class="about-preview">
+    <div class="container">
+        <h2>درباره من بیشتر بدانید</h2>
 
-    <p>
-        من سهیلا ملکی هستم، روان‌درمانگر اختلالات فردی بزرگسال با رویکردهای:
-    </p>
+        <p>
+            من سهیلا ملکی هستم، روان‌درمانگر اختلالات فردی بزرگسال با رویکردهای:
+        </p>
 
-    <ul>
-        <li>روان‌درمانی مبتنی بر انتقال (TFP)</li>
-        <li>روان‌درمانی مبتنی بر ذهنی‌سازی (Mentalization)</li>
-        <li>روان‌درمانی پویشی کوتاه‌مدت (ISTDP)</li>
-        <li>زوج‌درمانی با رویکرد هیجان‌مدار (EFT)</li>
-    </ul>
+        <ul class="approach-list">
+            <li>روان‌درمانی مبتنی بر انتقال (TFP)</li>
+            <li>روان‌درمانی مبتنی بر ذهنی‌سازی (Mentalization)</li>
+            <li>روان‌درمانی پویشی کوتاه‌مدت (ISTDP)</li>
+            <li>زوج‌درمانی با رویکرد هیجان‌مدار (EFT)</li>
+        </ul>
 
-    <p><strong>مهارت‌های تخصصی:</strong></p>
+        <h3>مهارت‌های تخصصی</h3>
 
-    <ul>
-        <li>درمان اختلالات شخصیت با تمرکز بر سازمان‌های شخصیت</li>
-        <li>درمان اختلالات دلبستگی و پیامدهای تجارب هیجانی اولیه</li>
-        <li>زوج‌درمانی و درمان اختلالات جنسی</li>
-        <li>درمان اختلالات اضطرابی، افسردگی، تیک و اهمال‌کاری</li>
-        <li>اجرای آزمون ارزیابی جامع شخصیت (SWAP-200)</li>
-        <li>اجرای مصاحبه ساختاریافته سازمان شخصیت (STIPO)</li>
-    </ul>
+        <ul class="skills-list">
+            <li>درمان اختلالات شخصیت با تمرکز بر سازمان‌های شخصیت</li>
+            <li>درمان اختلالات دلبستگی و پیامدهای تجارب هیجانی اولیه</li>
+            <li>زوج‌درمانی و درمان اختلالات جنسی</li>
+            <li>درمان اضطراب، افسردگی، تیک و اهمال‌کاری</li>
+            <li>اجرای آزمون ارزیابی جامع شخصیت (SWAP-200)</li>
+            <li>اجرای مصاحبه ساختاریافته سازمان شخصیت (STIPO)</li>
+        </ul>
+
+        <a href="about.html" class="btn-secondary">مطالعه کامل</a>
+    </div>
 </section>
 
-<footer>
-    © Dr. Soheila Maleki – All rights reserved
+<!-- ================= CTA ================= -->
+<section class="cta">
+    <h2>آماده شروع مسیر درمان هستید؟</h2>
+    <p>برای دریافت مشاوره و تعیین وقت، با من در ارتباط باشید.</p>
+    <a href="contact.html" class="btn-primary">تماس با من</a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+    <p>© تمامی حقوق محفوظ است – دکتر سهیلا ملکی</p>
 </footer>
 
 </body>
