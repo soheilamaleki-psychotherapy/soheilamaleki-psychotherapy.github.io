@@ -1,86 +1,131 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دکتر سهیلا ملکی</title>
+    <meta charset="UTF-8">
+    <title>Dr. Soheila Maleki | Psychotherapist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
+    <!-- SEO -->
+    <meta name="description" content="Dr. Soheila Maleki – Psychotherapist | TFP, ISTDP, Mentalization, AEDP | Individual & Couples Therapy">
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600&display=swap" rel="stylesheet">
 
-.hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
 
-.hero video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(
+                rgba(15,23,42,0.75),
+                rgba(15,23,42,0.75)
+            ),
+            url("images/hero.jpg") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
 
-.overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
-}
+        .hero img {
+            width: 160px;
+            border-radius: 50%;
+            border: 3px solid #e5e7eb;
+            margin-bottom: 1.5rem;
+        }
 
-.content {
-    position: relative;
-    z-index: 2;
-    height: 100%;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
 
-.content img {
-    width: 180px;
-    border-radius: 50%;
-    margin-top: 20px;
-    border: 3px solid rgba(255,255,255,0.5);
-}
+        .hero h2 {
+            font-size: 1.1rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
 
-h1 {
-    margin: 10px 0;
-    font-size: 42px;
-}
+        /* ABOUT */
+        .about {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+            line-height: 2;
+        }
 
-p {
-    font-size: 18px;
-}
-</style>
+        .about h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        ul {
+            padding-right: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.6rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="hero">
+<!-- HERO SECTION -->
+<section class="hero">
+    <div>
+        <!-- عکس شخصی -->
+        <img src="images/profile.jpg" alt="Dr. Soheila Maleki">
 
-    <video autoplay muted loop playsinline>
-        <source src="videos/hero-video.mp4" type="video/mp4">
-    </video>
-
-    <div class="overlay"></div>
-
-    <div class="content">
-        <h1>دکتر سهیلا ملکی</h1>
-        <p>روان‌درمانگر | AEDP • ISTDP • TFP • Mentalization</p>
-        <img src="images/portrait.jpg" alt="Soheila Maleki">
+        <h1>Dr. Soheila Maleki</h1>
+        <h2>Psychotherapist | Clinical & Health Psychology</h2>
     </div>
+</section>
 
-</div>
+<!-- ABOUT SECTION -->
+<section class="about">
+    <h3>درباره من بیشتر بدانید</h3>
+
+    <p>
+        من سهیلا ملکی هستم، روان‌درمانگر اختلالات فردی بزرگسال با رویکردهای:
+    </p>
+
+    <ul>
+        <li>روان‌درمانی مبتنی بر انتقال (TFP)</li>
+        <li>روان‌درمانی مبتنی بر ذهنی‌سازی (Mentalization)</li>
+        <li>روان‌درمانی پویشی کوتاه‌مدت (ISTDP)</li>
+        <li>زوج‌درمانی با رویکرد هیجان‌مدار (EFT)</li>
+    </ul>
+
+    <p><strong>مهارت‌های تخصصی:</strong></p>
+
+    <ul>
+        <li>درمان اختلالات شخصیت با تمرکز بر سازمان‌های شخصیت</li>
+        <li>درمان اختلالات دلبستگی و پیامدهای تجارب هیجانی اولیه</li>
+        <li>زوج‌درمانی و درمان اختلالات جنسی</li>
+        <li>درمان اختلالات اضطرابی، افسردگی، تیک و اهمال‌کاری</li>
+        <li>اجرای آزمون ارزیابی جامع شخصیت (SWAP-200)</li>
+        <li>اجرای مصاحبه ساختاریافته سازمان شخصیت (STIPO)</li>
+    </ul>
+</section>
+
+<footer>
+    © Dr. Soheila Maleki – All rights reserved
+</footer>
 
 </body>
 </html>
