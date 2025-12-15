@@ -1,327 +1,149 @@
-/* =================== عمومی =================== */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Tahoma', sans-serif;
-    scroll-behavior: smooth;
-    color: #333;
-    background-color: #fff;
-}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دکتر سهیلا ملکی | روان‌درمانگر</title>
 
-/* =================== هدر و منو =================== */
-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    background: rgba(0,0,0,0.7);
-    transition: background 0.3s ease, padding 0.3s ease;
-}
+    <!-- SEO -->
+    <meta name="description" content="دکتر سهیلا ملکی، روان‌درمانگر بزرگسال و زوج‌درمانگر با رویکردهای TFP، ISTDP، Mentalization و AEDP">
 
-header.scrolled {
-    background: rgba(0,0,0,0.9);
-    padding: 5px 50px;
-}
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-}
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+<body>
 
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background 0.3s ease, color 0.3s ease;
-}
+<!-- ================= HEADER ================= -->
+<header class="sticky-header">
+    <nav class="navbar container">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Dr Soheila Maleki" class="site-logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="active">خانه</a></li>
+            <li><a href="#about-preview">درباره من</a></li>
+            <li><a href="#services">خدمات</a></li>
+            <li><a href="#team">تیم درمانگران</a></li>
+            <li><a href="#cta">تماس</a></li>
+        </ul>
+    </nav>
+</header>
 
-.nav-links li a:hover,
-.nav-links li a.active {
-    background-color: #ff7f50;
-    color: #fff;
-}
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero" data-aos="fade-up">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="videos/hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="zoom-in" data-aos-delay="300">
+        <img src="images/logo.png" alt="Logo" class="hero-logo">
+        <h1>دکتر سهیلا ملکی</h1>
+        <p class="hero-subtitle">روان‌درمانگر اختلالات فردی بزرگسال و زوج‌درمانگر</p>
+        <img src="images/portrait.jpg" alt="Dr Soheila Maleki" class="hero-portrait">
+        <a href="#cta" class="btn-primary">رزرو جلسه</a>
+    </div>
+</section>
 
-.site-logo {
-    height: 50px;
-}
+<!-- ================= ABOUT PREVIEW ================= -->
+<section class="about-preview container" id="about-preview">
+    <h2 data-aos="fade-right">درباره من بیشتر بدانید</h2>
+    <p data-aos="fade-left">
+        من سهیلا ملکی هستم، روان‌درمانگر اختلالات فردی بزرگسال با رویکردهای:
+    </p>
+    <ul class="approach-list" data-aos="fade-up" data-aos-delay="200">
+        <li>روان‌درمانی مبتنی بر انتقال (TFP)</li>
+        <li>روان‌درمانی مبتنی بر ذهنی‌سازی (Mentalization)</li>
+        <li>روان‌درمانی پویشی کوتاه‌مدت (ISTDP)</li>
+        <li>زوج‌درمانی با رویکرد هیجان‌مدار (EFT)</li>
+    </ul>
+    <h3 data-aos="fade-right" data-aos-delay="400">مهارت‌های تخصصی</h3>
+    <ul class="skills-list" data-aos="fade-up" data-aos-delay="500">
+        <li>درمان اختلالات شخصیت با تمرکز بر سازمان‌های شخصیت</li>
+        <li>درمان اختلالات دلبستگی و پیامدهای تجارب هیجانی اولیه</li>
+        <li>زوج‌درمانی و درمان اختلالات جنسی</li>
+        <li>درمان اضطراب، افسردگی، تیک و اهمال‌کاری</li>
+        <li>اجرای آزمون ارزیابی جامع شخصیت (SWAP-200)</li>
+        <li>اجرای مصاحبه ساختاریافته سازمان شخصیت (STIPO)</li>
+    </ul>
+</section>
 
-/* =================== Hero =================== */
-.hero {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
+<!-- ================= SERVICES ================= -->
+<section class="services container" id="services">
+    <h2 data-aos="fade-up">خدمات ما</h2>
+    <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/service1.png" alt="خدمات 1">
+            <h3>روان‌درمانی فردی</h3>
+            <p>درمان اختلالات شخصیتی، اضطراب، افسردگی و پیامدهای هیجانی اولیه</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/service2.png" alt="خدمات 2">
+            <h3>زوج‌درمانی</h3>
+            <p>حل تعارضات زوجین، بهبود ارتباط و درمان اختلالات جنسی</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/service3.png" alt="خدمات 3">
+            <h3>آزمون‌ها و ارزیابی‌ها</h3>
+            <p>اجرای SWAP-200، STIPO و سایر ارزیابی‌های شخصیت و روان‌شناختی</p>
+        </div>
+    </div>
+</section>
 
-.hero-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    z-index: 1;
-}
+<!-- ================= TEAM ================= -->
+<section class="team container" id="team">
+    <h2 data-aos="fade-up">تیم درمانگران</h2>
+    <div class="team-grid">
+        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/portrait1.jpg" alt="دکتر سهیلا ملکی">
+            <div class="team-info">
+                <h3>دکتر سهیلا ملکی</h3>
+                <p>روان‌درمانگر بزرگسال و زوج‌درمانگر</p>
+            </div>
+        </div>
+        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/portrait2.jpg" alt="دکتر ...">
+            <div class="team-info">
+                <h3>دکتر ...</h3>
+                <p>روان‌درمانگر تخصصی اختلالات شخصیت</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-.hero-overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,0.45);
-    z-index: 2;
-}
+<!-- ================= CTA ================= -->
+<section class="cta container" id="cta" data-aos="fade-up">
+    <h2>آماده شروع مسیر درمان هستید؟</h2>
+    <p>برای دریافت مشاوره و تعیین وقت، با من در ارتباط باشید.</p>
+    <a href="#contact" class="btn-primary">تماس با من</a>
+</section>
 
-.hero-content {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    color: #fff;
-    top: 50%;
-    transform: translateY(-50%);
-}
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer container" data-aos="fade-up">
+    <p>© تمامی حقوق محفوظ است – دکتر سهیلا ملکی</p>
+</footer>
 
-.hero-logo {
-    width: 180px;
-    margin-bottom: 20px;
-}
+<!-- ================= JS ================= -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({ duration: 1000, once: true });
 
-.hero h1 {
-    font-size: 56px;
-    margin: 20px 0 10px 0;
-    animation: fadeInDown 1s ease forwards;
-}
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e){
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
+    });
 
-.hero p {
-    font-size: 22px;
-    margin-bottom: 30px;
-    animation: fadeInUp 1s ease forwards;
-}
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) { header.classList.add('scrolled'); }
+        else { header.classList.remove('scrolled'); }
+    });
+</script>
 
-.hero-portrait {
-    width: 180px;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 20px;
-    border: 3px solid #fff;
-}
-
-/* =================== Buttons =================== */
-.btn-primary {
-    padding: 15px 30px;
-    background-color: #ff7f50;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.btn-primary:hover {
-    transform: scale(1.05);
-    background-color: #ff6333;
-}
-
-.btn-secondary {
-    padding: 12px 25px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.btn-secondary:hover {
-    background-color: #555;
-    transform: scale(1.05);
-}
-
-/* =================== About / Bio =================== */
-.about-preview, .bio {
-    padding: 80px 20px;
-    text-align: center;
-    background: #f5f5f5;
-}
-
-.about-preview h2, .bio h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.about-preview p, .bio p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto 30px;
-}
-
-.approach-list li, .skills-list li {
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.approach-list li:hover, .skills-list li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* =================== Services =================== */
-.services {
-    padding: 80px 20px;
-    text-align: center;
-    background-color: #f5f5f5;
-}
-
-.services h2 {
-    font-size: 36px;
-    margin-bottom: 50px;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.service-card {
-    background: #fff;
-    border-radius: 15px;
-    padding: 30px 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.service-card img {
-    width: 80px;
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.service-card p {
-    font-size: 16px;
-    color: #555;
-}
-
-/* =================== Team =================== */
-.team {
-    padding: 80px 20px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.team h2 {
-    font-size: 36px;
-    margin-bottom: 50px;
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.team-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-
-.team-card img {
-    width: 100%;
-    display: block;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-
-.team-card:hover img {
-    transform: scale(1.05);
-}
-
-.team-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    background: rgba(0,0,0,0.6);
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    text-align: center;
-}
-
-.team-card:hover .team-info {
-    opacity: 1;
-}
-
-.team-info h3 {
-    margin: 0 0 5px 0;
-    font-size: 20px;
-}
-
-.team-info p {
-    margin: 0;
-    font-size: 14px;
-}
-
-/* =================== CTA =================== */
-.cta {
-    padding: 80px 20px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.cta h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.cta p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-/* =================== Footer =================== */
-.site-footer {
-    text-align: center;
-    padding: 30px 0;
-    background: #222;
-    color: #fff;
-    font-size: 16px;
-}
-
-/* =================== Animations =================== */
-@keyframes fadeInDown {
-    0% { opacity: 0; transform: translateY(-50px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(50px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
+</body>
+</html>
