@@ -1,46 +1,86 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دکتر سهیلا ملکی | روان‌درمانگر</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دکتر سهیلا ملکی</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.content img {
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid rgba(255,255,255,0.5);
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 42px;
+}
+
+p {
+    font-size: 18px;
+}
+</style>
 </head>
+
 <body>
 
-<!-- هدر و منو -->
-<header>
-    <nav class="navbar">
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Dr Soheila Maleki" class="site-logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">خانه</a></li>
-            <li><a href="about.html">درباره من</a></li>
-            <li><a href="services.html">خدمات</a></li>
-            <li><a href="approaches.html">رویکردها</a></li>
-            <li><a href="books.html">کتاب‌ها</a></li>
-            <li><a href="tests.html">آزمون‌ها</a></li>
-            <li><a href="contact.html">تماس</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="hero">
 
-<!-- بخش هِرو با ویدیو -->
-<section class="hero">
-    <video autoplay muted loop class="hero-video">
+    <video autoplay muted loop playsinline>
         <source src="videos/hero-video.mp4" type="video/mp4">
-        مرورگر شما از ویدیو پشتیبانی نمی‌کند.
     </video>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <img src="images/logo.png" alt="Logo" class="hero-logo">
+
+    <div class="overlay"></div>
+
+    <div class="content">
         <h1>دکتر سهیلا ملکی</h1>
         <p>روان‌درمانگر | AEDP • ISTDP • TFP • Mentalization</p>
-        <img src="images/portrait.jpg" alt="Dr Soheila Maleki" class="hero-portrait">
-        <a href="contact.html" class="btn-primary">رزرو جلسه</a>
+        <img src="images/portrait.jpg" alt="Soheila Maleki">
     </div>
-</section>
+
+</div>
 
 </body>
 </html>
