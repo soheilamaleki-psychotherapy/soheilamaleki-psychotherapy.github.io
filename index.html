@@ -4,109 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- فونت شبنم - لود سریع و زیبا -->
+    <!-- فونت شبنم -->
     <link rel="preconnect" href="https://cdn.rastikerdar.com">
     <link href="https://cdn.rastikerdar.com/font/shabnam/stylesheet.css" rel="stylesheet">
 
     <title>دکتر سهیلا ملکی | روان‌درمانگر</title>
+
     <!-- SEO -->
     <meta name="description" content="دکتر سهیلا ملکی، روان‌درمانگر بزرگسال و زوج‌درمانگر با رویکردهای TFP، ISTDP، Mentalization و AEDP">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- AOS CSS -->
+
+    <!-- AOS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
+
 <body>
+
 <!-- ================= HEADER ================= -->
 <header class="sticky-header">
     <nav class="navbar container">
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Dr Soheila Maleki" class="site-logo">
-        </div>
+        <img src="images/logo.png" alt="Dr Soheila Maleki" class="site-logo">
+
         <ul class="nav-links">
             <li><a href="index.html" class="active">خانه</a></li>
             <li><a href="about.html">درباره من</a></li>
             <li><a href="services.html">خدمات</a></li>
             <li><a href="contact.html">تماس</a></li>
-            <!-- اگر صفحات دیگه مثل approaches.html یا online.html رو به منو می‌خوای اضافه کنی، اینجا بذار -->
         </ul>
     </nav>
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="hero" id="hero" data-aos="fade-up">
-    <video autoplay muted loop playsinline class="hero-video">
-        <source src="videos/hero-video.mp4" type="video/mp4">
-    </video>
+<section class="hero" id="hero">
     <div class="hero-overlay"></div>
-    <div class="hero-content" data-aos="zoom-in" data-aos-delay="300">
+
+    <div class="hero-content" data-aos="fade-up">
         <img src="images/logo.png" alt="Logo" class="hero-logo">
+
         <h1>دکتر سهیلا ملکی</h1>
-        <p class="hero-subtitle">روان‌درمانگر اختلالات فردی بزرگسال و زوج‌درمانگر</p>
-        <img src="images/portrait.jpg" alt="Dr Soheila Maleki" class="hero-portrait">
-        <a href="contact.html" class="btn-primary">رزرو جلسه</a>
+
+        <p class="hero-subtitle">
+            روان‌درمانگر اختلالات فردی بزرگسال و زوج‌درمانگر
+        </p>
+
+        <a href="contact.html" class="btn-primary">
+            رزرو جلسه
+        </a>
     </div>
 </section>
 
-<!-- ================= ABOUT PREVIEW (پیش‌نمایش کوتاه در صفحه اصلی) ================= -->
+<!-- ================= ABOUT PREVIEW ================= -->
 <section class="about-preview container" id="about-preview">
-    <h2 data-aos="fade-right">درباره من بیشتر بدانید</h2>
-    <p data-aos="fade-left">
-        من سهیلا ملکی هستم، روان‌درمانگر اختلالات فردی بزرگسال با رویکردهای:
+    <h2 data-aos="fade-up">درباره من</h2>
+
+    <p data-aos="fade-up" style="max-width:800px;margin:0 auto 40px;">
+        من سهیلا ملکی هستم، روان‌درمانگر اختلالات فردی بزرگسال با تمرکز بر
+        درمان‌های عمیق، مبتنی بر دلبستگی و سازمان شخصیت.
     </p>
-    <ul class="approach-list" data-aos="fade-up" data-aos-delay="200">
+
+    <ul class="approach-list" data-aos="fade-up">
         <li>روان‌درمانی مبتنی بر انتقال (TFP)</li>
-        <li>روان‌درمانی مبتنی بر ذهنی‌سازی (Mentalization)</li>
+        <li>روان‌درمانی مبتنی بر ذهنی‌سازی (MBT)</li>
         <li>روان‌درمانی پویشی کوتاه‌مدت (ISTDP)</li>
-        <li>زوج‌درمانی با رویکرد هیجان‌مدار (EFT)</li>
+        <li>زوج‌درمانی هیجان‌مدار (EFT)</li>
     </ul>
-    <a href="about.html" class="btn-primary" style="display: block; width: fit-content; margin: 40px auto;">بیشتر بخوانید</a>
+
+    <a href="about.html" class="btn-primary" style="display:block;width:fit-content;margin:50px auto 0;">
+        بیشتر بخوانید
+    </a>
 </section>
 
-<!-- ================= SERVICES PREVIEW ================= -->
+<!-- ================= SERVICES ================= -->
 <section class="services container" id="services">
-    <h2 data-aos="fade-up">خدمات ما</h2>
-    <div class="services-grid">
-        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-            <img src="images/service1.png" alt="خدمات 1">
-            <h3>روان‌درمانی فردی</h3>
-            <p>درمان اختلالات شخصیتی، اضطراب، افسردگی و پیامدهای هیجانی اولیه</p>
-        </div>
-        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-            <img src="images/service2.png" alt="خدمات 2">
-            <h3>زوج‌درمانی</h3>
-            <p>حل تعارضات زوجین، بهبود ارتباط و درمان اختلالات جنسی</p>
-        </div>
-        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-            <img src="images/service3.png" alt="خدمات 3">
-            <h3>آزمون‌ها و ارزیابی‌ها</h3>
-            <p>اجرای SWAP-200، STIPO و سایر ارزیابی‌های شخصیت و روان‌شناختی</p>
-        </div>
-    </div>
-    <a href="services.html" class="btn-primary" style="display: block; width: fit-content; margin: 40px auto;">مشاهده همه خدمات</a>
-</section>
-
-<!-- ================= CTA ================= -->
-<section class="cta container" id="cta" data-aos="fade-up">
-    <h2>آماده شروع مسیر درمان هستید؟</h2>
-    <p>برای دریافت مشاوره و تعیین وقت، با من در ارتباط باشید.</p>
-    <a href="contact.html" class="btn-primary">تماس با من</a>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer container" data-aos="fade-up">
-    <p>© تمامی حقوق محفوظ است – دکتر سهیلا ملکی</p>
-</footer>
-
-<!-- ================= JS ================= -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-    AOS.init({ duration: 1000, once: true });
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('header');
-        if (window.scrollY > 50) { header.classList.add('scrolled'); }
-        else { header.classList.remove('scrolled'); }
-    });
-</script>
-</body>
-</html>
+    <h2 data-aos="fade-up">خدمات درمانی</h2
