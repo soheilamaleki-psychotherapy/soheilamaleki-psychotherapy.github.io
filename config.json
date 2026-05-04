@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "روان‌درمانی آنلاین برای ایرانیان خارج از کشور | کلینیک بن‌سای",
+    "description": "جلسات روان‌درمانی آنلاین برای فارسی‌زبانان خارج از کشور. درمان اضطراب، افسردگی، تروما و مشکلات رابطه با رویکردهای علمی مانند TFP، ISTDP و MBT.",
+    "keywords": "روانشناس فارسی خارج از کشور, روان درمانی آنلاین فارسی, therapist persian online, iranian psychologist abroad, online therapy persian, درمان اضطراب خارج از کشور, روانشناس ایرانی اروپا",
+    "author": "Bonpsy Clinic",
+    "canonical": "https://bonpsy.com/",
+    "hreflangFa": "https://bonpsy.com/",
+    "og": {
+      "title": "روان‌درمانی آنلاین برای ایرانیان خارج از کشور",
+      "description": "جلسات آنلاین، محرمانه و تخصصی برای فارسی‌زبانان در سراسر جهان.",
+      "url": "https://bonpsy.com/",
+      "image": "https://bonpsy.ir/og-cover.jpg"
+    },
+    "twitter": {
+      "title": "روان‌درمانی آنلاین فارسی",
+      "description": "درمان آنلاین برای ایرانیان خارج از کشور",
+      "image": "https://bonpsy.ir/og-cover.jpg"
+    }
+  },
+  "brand": {
+    "logo": "/images/bonpsy-logo.png",
+    "footerName": "بن‌سای",
+    "footerYearText": "© ۱۴۰۵ کلینیک بن‌سای — تمامی حقوق محفوظ است"
+  },
+  "nav": {
+    "items": [
+      { "label": "خانه", "href": "#hero" },
+      { "label": "درباره ما", "href": "#about" },
+      { "label": "خدمات", "href": "#services" }
+    ],
+    "cta": { "label": "رزرو جلسه آنلاین", "href": "#cta" }
+  },
+  "social": [
+    {
+      "name": "Telegram",
+      "href": "https://t.me/test",
+      "icon": "telegram"
+    },
+    {
+      "name": "WhatsApp",
+      "href": "https://wa.me/test",
+      "icon": "whatsapp"
+    },
+    {
+      "name": "Instagram",
+      "href": "https://instagram.com/test",
+      "icon": "instagram"
+    },
+    { "name": "Phone", "href": "tel:+123456789", "icon": "phone" }
+  ],
+  "hero": {
+    "kicker": "روان‌درمانی آنلاین برای فارسی‌زبانان سراسر جهان",
+    "title": "مسیر سلامت روان، <span>حتی دور از خانه</span>",
+    "text": "کلینیک بن‌سای، ارائه‌دهنده روان‌درمانی تخصصی برای ایرانیان خارج از کشور، با جلسات آنلاین، محرمانه و مبتنی بر جدیدترین رویکردهای علمی.",
+    "actions": [
+      {
+        "label": "رزرو جلسه آنلاین",
+        "href": "#cta",
+        "class": "btn btn-primary"
+      },
+      {
+        "label": "آشنایی با روش درمان",
+        "href": "#about",
+        "class": "btn btn-secondary"
+      }
+    ],
+    "images": [
+      {
+        "src": "images/pic_1.png",
+        "alt": "فضای آرام درمانی",
+        "class": "float-card float-card--image card-a"
+      },
+      {
+        "src": "images/pic_2.png",
+        "alt": "جلسه مشاوره آنلاین",
+        "class": "float-card float-card--image card-b"
+      },
+      {
+        "src": "images/pic_3.png",
+        "alt": "محیط امن و حرفه‌ای درمان",
+        "class": "float-card float-card--image card-c"
+      }
+    ]
+  }
+}
